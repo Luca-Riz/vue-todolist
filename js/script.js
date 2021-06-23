@@ -23,6 +23,10 @@ const app = new Vue(
             delTodo(i){
                 // console.log(i);
                 this.list.splice(i,1)
+            },
+
+            delTuttiTodo(){
+                this.list= ""
             }
         }
     }

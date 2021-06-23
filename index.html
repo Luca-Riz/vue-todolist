@@ -25,6 +25,7 @@
         <div class="newTodo my_20">
             <input type="text" placeholder="Nuovo Todo" v-model="newListIt" v-on:keyup.enter="aggTodo">
             <button class="pointer" @click = "aggTodo">Aggiungi</button>
+            <button class="pointer" @click = "delTuttiTodo">Svuota lista</button>
         </div>
         <!-- fine inserimento nuovo todo -->
         
