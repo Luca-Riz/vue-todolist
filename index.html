@@ -28,9 +28,9 @@
 
         <div class="todo my_20">
             <ul>
-                <li class="clearfix todo" v-for="item in list">
+                <li class="clearfix todo" v-for="(item,index) in list">
                     {{item}}
-                    <i class="fas fa-eraser"></i>
+                    <i class="fas fa-eraser" @click = "delTodo(index)"></i>
                 </li>
             </ul>
         </div>        

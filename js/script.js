@@ -15,6 +15,11 @@ const app = new Vue(
                 // console.log(this.newListIt)
                 this.list.push(this.newListIt);
                 this.newListIt = "";
+            },
+
+            delTodo(i){
+                // console.log(i);
+                this.list.splice(i,1)
             }
         }
     }
