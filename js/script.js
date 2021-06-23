@@ -26,6 +26,7 @@ const app = new Vue(
             },
 
             delTuttiTodo(){
+                alert("Attenzione, stai svuotando l'intera lista"),
                 this.list= ""
             }
         }
