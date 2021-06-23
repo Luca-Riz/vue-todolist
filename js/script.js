@@ -11,10 +11,11 @@ const app = new Vue(
         },
 
         methods: {
-            aggTodo(){
+            aggTodo: function() {
+                if(this.newListIt != ""){
                 // console.log(this.newListIt)
                 this.list.push(this.newListIt);
-                this.newListIt = "";
+                this.newListIt = "";}
             },
 
             delTodo(i){
