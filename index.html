@@ -23,14 +23,14 @@
 
         <div class="newTodo my_20">
             <input type="text" placeholder="Nuovo Todo" v-model="newListIt" v-on:keyup.enter="aggTodo">
-            <button @click = "aggTodo">Aggiungi</button>
+            <button class="pointer" @click = "aggTodo">Aggiungi</button>
         </div>
 
         <div class="todo my_20">
             <ul v-if="list.length > 0">
                 <li class="clearfix todo" v-for="(item,index) in list">
                     {{item}}
-                    <i class="fas fa-eraser" @click = "delTodo(index)"></i>
+                    <i class="fas fa-eraser pointer" @click = "delTodo(index)"></i>
                 </li>
             </ul>
             <h2 v-else>Non ci sono cose da fare</h2> 
