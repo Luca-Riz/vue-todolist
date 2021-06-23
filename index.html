@@ -21,11 +21,14 @@
             <img src="img/logo.png" alt="logo-boolean">
         </header>
 
+        <!-- inserimento nuovo todo -->
         <div class="newTodo my_20">
             <input type="text" placeholder="Nuovo Todo" v-model="newListIt" v-on:keyup.enter="aggTodo">
             <button class="pointer" @click = "aggTodo">Aggiungi</button>
         </div>
-
+        <!-- fine inserimento nuovo todo -->
+        
+        <!-- lista todo -->
         <div class="todo my_20">
             <ul v-if="list.length > 0">
                 <li class="clearfix todo" v-for="(item,index) in list">
@@ -35,6 +38,7 @@
             </ul>
             <h2 v-else>Non ci sono cose da fare</h2> 
         </div>        
+        <!-- fine lista todo -->
         
     </div>
     <!-- fine #app -->   

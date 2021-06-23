@@ -11,6 +11,7 @@ const app = new Vue(
         },
 
         methods: {
+            // se non vuoto aggiungi alla lista
             aggTodo: function() {
                 if(this.newListIt != ""){
                 // console.log(this.newListIt)
@@ -18,6 +19,7 @@ const app = new Vue(
                 this.newListIt = "";}
             },
 
+            // cancella elemento corrispondente all'index dalla lista
             delTodo(i){
                 // console.log(i);
                 this.list.splice(i,1)
