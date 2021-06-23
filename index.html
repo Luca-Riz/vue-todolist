@@ -22,7 +22,7 @@
         </header>
 
         <div class="newTodo my_20">
-            <input type="text" placeholder="Nuovo Todo" v-model="newListIt">
+            <input type="text" placeholder="Nuovo Todo" v-model="newListIt" v-on:keyup.enter="aggTodo">
             <button @click = "aggTodo">Aggiungi</button>
         </div>
 
