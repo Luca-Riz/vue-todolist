@@ -4,3 +4,55 @@
     box-sizing: border-box;
 }
 
+/** common */
+
+.my_20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/** fine common */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.newTodo input, .newTodo button {
+    padding: 10px 20px;
+}
+
+.todo {
+    width: 80%;
+    background-color: #f7f7f7;
+}
+
+.todo ul {
+    margin: 30px;
+}
+
+.todo li {
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+}
+
+.todo li i {
+    float: right;
+}
+

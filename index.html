@@ -14,8 +14,37 @@
     <title>Vue To Do List</title>
 </head>
 <body>
-    
+    <!-- inizio #app -->
+    <div id="app">
 
+        <header class="logo my_20">
+            <img src="img/logo.png" alt="logo-boolean">
+        </header>
+
+        <div class="newTodo my_20">
+            <input type="text" placeholder="Nuovo Todo">
+            <button>Aggiungi</button>
+        </div>
+
+        <div class="todo my_20">
+            <ul>
+                <li class="clearfix">
+                    Fare i compiti
+                    <i class="fas fa-eraser"></i>
+                </li>
+                <li class="clearfix">
+                    Fare la spesa
+                    <i class="fas fa-eraser"></i>
+                </li>
+                <li class="clearfix">
+                    Fare il bucato
+                    <i class="fas fa-eraser"></i>
+                </li>
+            </ul>
+        </div>        
+        
+    </div>
+    <!-- fine #app -->   
 
 
     <script src="js/script.js"></script>
