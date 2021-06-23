@@ -22,8 +22,8 @@
         </header>
 
         <div class="newTodo my_20">
-            <input type="text" placeholder="Nuovo Todo">
-            <button>Aggiungi</button>
+            <input type="text" placeholder="Nuovo Todo" v-model="newListIt">
+            <button @click = "aggTodo">Aggiungi</button>
         </div>
 
         <div class="todo my_20">
