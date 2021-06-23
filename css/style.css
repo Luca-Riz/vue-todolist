@@ -47,9 +47,11 @@
 }
 
 .todo li {
+    width: 100%;
     padding: 10px;
     border-bottom: 1px solid lightgrey;
     list-style: none;
+    margin: auto;
 }
 
 .todo li i {
