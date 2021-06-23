@@ -28,16 +28,8 @@
 
         <div class="todo my_20">
             <ul>
-                <li class="clearfix">
-                    Fare i compiti
-                    <i class="fas fa-eraser"></i>
-                </li>
-                <li class="clearfix">
-                    Fare la spesa
-                    <i class="fas fa-eraser"></i>
-                </li>
-                <li class="clearfix">
-                    Fare il bucato
+                <li class="clearfix todo" v-for="item in list">
+                    {{item}}
                     <i class="fas fa-eraser"></i>
                 </li>
             </ul>
