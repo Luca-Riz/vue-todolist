@@ -27,12 +27,13 @@
         </div>
 
         <div class="todo my_20">
-            <ul>
+            <ul v-if="list.length > 0">
                 <li class="clearfix todo" v-for="(item,index) in list">
                     {{item}}
                     <i class="fas fa-eraser" @click = "delTodo(index)"></i>
                 </li>
             </ul>
+            <h2 v-else>Non ci sono cose da fare</h2> 
         </div>        
         
     </div>

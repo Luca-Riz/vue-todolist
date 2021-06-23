@@ -42,7 +42,7 @@
     background-color: #f7f7f7;
 }
 
-.todo ul {
+.todo ul, .todo h2 {
     margin: 30px;
 }
 
@@ -56,5 +56,9 @@
 
 .todo li i {
     float: right;
+}
+
+.todo h2 {
+    text-align: center;
 }
 
