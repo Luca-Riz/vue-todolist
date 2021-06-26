@@ -8,7 +8,7 @@ const app = new Vue(
                 'Fare la spesa',
                 'Fare il bucato'
             ],
-            barrato: "false",
+            barrato: [],
         },
 
         methods: {
@@ -32,17 +32,15 @@ const app = new Vue(
                 // console.log(this.list);
             },
 
-            barrato: function(i){
-                if(this.barrato(i) == false){
-                    return this.barrato(i) = true
-                } else {
-                    return this.barrato(i) = false
-                }
+            barra: function(index){
+                let element = document.getElementById('indice' + index);
+                console.log(element);
+                element.classList.toggle('barrato');
             }
         },
 
         mounted() {
-            this.barrato = false;
+            this.barrato = [];
             console.log('this barrato = ' + this.barrato);
         }
     }

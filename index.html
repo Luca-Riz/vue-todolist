@@ -32,8 +32,9 @@
         <!-- lista todo -->
         <div class="todo my_20">
             <ul v-if="list.length > 0">
-                <li class="clearfix todo pointer"  v-for="(item,index) in list" @click="barrato(index)" :class="(barrato == false) ? 'barrato' : ''">
-                    {{item}}
+                <li class="clearfix todo"  v-for="(item,index) in list" >
+                    <span :id="'indice' + index " @click="barra(index)" class="pointer">
+                    {{index+1}} - {{item}}</span>
                     <i class="fas fa-eraser pointer" @click = "delTodo(index)"></i>
                 </li>
             </ul>
