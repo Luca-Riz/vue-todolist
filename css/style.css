@@ -17,6 +17,14 @@
     display: table;
   }
 
+.barrato {
+    text-decoration: line-through;
+}
+
+/* .none {
+    text-decoration: none;
+} */
+
 /** fine common */
 
 #app {

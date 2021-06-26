@@ -7,7 +7,8 @@ const app = new Vue(
                 'Fare i compiti',
                 'Fare la spesa',
                 'Fare il bucato'
-            ]
+            ],
+            barrato: "false",
         },
 
         methods: {
@@ -28,8 +29,21 @@ const app = new Vue(
             delTuttiTodo(){
                 alert("Attenzione, stai svuotando l'intera lista"),
                 this.list= [];
-                console.log(this.list);
+                // console.log(this.list);
+            },
+
+            barrato: function(i){
+                if(this.barrato(i) == false){
+                    return this.barrato(i) = true
+                } else {
+                    return this.barrato(i) = false
+                }
             }
+        },
+
+        mounted() {
+            this.barrato = false;
+            console.log('this barrato = ' + this.barrato);
         }
     }
 );
